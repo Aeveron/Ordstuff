@@ -1,0 +1,8 @@
+C:\Users\GET-Academy\Desktop\C#\OrdStuff\OrdStuff\bin\Debug\ordliste.txt
+C:\Users\GET-Academy\Desktop\C#\OrdStuff\OrdStuff\bin\Debug\OrdStuff.exe.config
+C:\Users\GET-Academy\Desktop\C#\OrdStuff\OrdStuff\bin\Debug\OrdStuff.exe
+C:\Users\GET-Academy\Desktop\C#\OrdStuff\OrdStuff\bin\Debug\OrdStuff.pdb
+C:\Users\GET-Academy\Desktop\C#\OrdStuff\OrdStuff\obj\Debug\OrdStuff.csprojAssemblyReference.cache
+C:\Users\GET-Academy\Desktop\C#\OrdStuff\OrdStuff\obj\Debug\OrdStuff.csproj.CoreCompileInputs.cache
+C:\Users\GET-Academy\Desktop\C#\OrdStuff\OrdStuff\obj\Debug\OrdStuff.exe
+C:\Users\GET-Academy\Desktop\C#\OrdStuff\OrdStuff\obj\Debug\OrdStuff.pdb
