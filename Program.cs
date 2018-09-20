@@ -23,10 +23,12 @@ namespace OrdStuff
             var lastWordIndex = string.Empty;
             //Console.WriteLine(word1);
 
-            var ending = word1.Substring(randomWordIndex, words[0].Length - 3);
+            var ending = word1.Substring(word1.Length -3);
+
+
 
             Console.WriteLine(ending);
-            
+
             //foreach (var word in words)
             //{
             //    var compareWordAndRandomWord = word.Substring(randomWord, 3);
