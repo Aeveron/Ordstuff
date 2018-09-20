@@ -26,7 +26,7 @@ namespace OrdStuff
             var ending = word1.Substring(randomWordIndex, words[0].Length - 3);
 
             Console.WriteLine(ending);
-            var x = 3;
+            
             //foreach (var word in words)
             //{
             //    var compareWordAndRandomWord = word.Substring(randomWord, 3);
