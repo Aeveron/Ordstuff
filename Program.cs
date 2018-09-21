@@ -19,15 +19,27 @@ namespace OrdStuff
             var words = WordListArray(allLines, lastWord);             
             var randomWordIndex = Random.Next(words.Length);
 
-            var word1 = words[randomWordIndex];
+            var randomWord = words[randomWordIndex];
             var lastWordIndex = string.Empty;
-            //Console.WriteLine(word1);
+            
 
-            var ending = word1.Substring(word1.Length -3);
+            var ending = randomWord.Substring(randomWord.Length -3);
 
 
 
+
+            Console.WriteLine(randomWord);
             Console.WriteLine(ending);
+
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (CompareWordStartAndEnding(randomWord, words[i]))
+                {
+                    Console.WriteLine("\n" + words[i]);
+                    return;
+                }
+            }
+            
 
             //foreach (var word in words)
             //{
@@ -37,6 +49,22 @@ namespace OrdStuff
             //    Console.WriteLine(randomWord);
             //}
 
+        }
+
+        private static bool CompareWordStartAndEnding(string word1, string word2)
+        {
+            return CompareWordStartAndEnding(4, word1, word2)
+                || CompareWordStartAndEnding(5, word1, word2)
+                || CompareWordStartAndEnding(6, word1, word2);
+
+        }
+
+        private static bool CompareWordStartAndEnding(int commonlength, string word1, string word2)
+        {
+            var lastPartOfFirstWord = word1.Substring(word1.Length - commonlength, commonlength);
+            var firstPartOfSecondWord = word2.Substring(0, commonlength);
+
+            return lastPartOfFirstWord == firstPartOfSecondWord;
         }
 
         private static string[] WordListArray(string[] allLines, string lastWord)
