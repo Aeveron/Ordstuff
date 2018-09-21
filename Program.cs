@@ -21,9 +21,10 @@ namespace OrdStuff
 
             var randomWord = words[randomWordIndex];
             var lastWordIndex = string.Empty;
+            var wordCounter = 200;
             
 
-            var ending = randomWord.Substring(randomWord.Length -3);
+            var ending = randomWord.Substring(randomWord.Length -4);
 
 
 
