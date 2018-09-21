@@ -22,7 +22,11 @@ namespace OrdStuff
             var randomWord = words[randomWordIndex];
             var lastWordIndex = string.Empty;
             var wordCounter = 200;
-            
+
+            while (wordCounter > 0)
+            {
+                
+            }
 
             var ending = randomWord.Substring(randomWord.Length -4);
 
@@ -32,14 +36,7 @@ namespace OrdStuff
             Console.WriteLine(randomWord);
             Console.WriteLine(ending);
 
-            for (int i = 0; i < words.Length; i++)
-            {
-                if (CompareWordStartAndEnding(randomWord, words[i]))
-                {
-                    Console.WriteLine("\n" + words[i]);
-                    return;
-                }
-            }
+            
             
 
             //foreach (var word in words)
