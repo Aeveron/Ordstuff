@@ -21,7 +21,7 @@ namespace OrdStuff
             var randomWordIndex = Random.Next(words.Length);
 
             var randomWord = words[randomWordIndex];
-            var lastWordIndex = string.Empty;
+            //var lastWordIndex = string.Empty;
             var wordCounter = 200;
 
             while (wordCounter > 0)
@@ -51,7 +51,7 @@ namespace OrdStuff
         {
             var randomWordIndex = Random.Next(words.Length);
             var selectedWord = words[randomWordIndex];
-            Console.Write(selectedWord + " - ");
+            Console.Write(selectedWord.PadLeft(4) + " - ");
 
             foreach (var word in words)
             {
@@ -59,7 +59,7 @@ namespace OrdStuff
                 Console.WriteLine(word);
                 return true;
             }
-            Console.WriteLine("<fant ikke match>");
+            Console.WriteLine("<No Match>");
             return false;
         }
 
