@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Text;
 using System.Xml.Schema;
 
 namespace OrdStuff
@@ -31,6 +32,8 @@ namespace OrdStuff
 
             var ending = randomWord.Substring(randomWord.Length - 4);
 
+            Console.WriteLine();
+            Console.WriteLine("Eksempel på start av en ordgåte nedenfor: ");
             Console.WriteLine(randomWord);
             Console.WriteLine(ending);
 
@@ -49,7 +52,7 @@ namespace OrdStuff
             var randomWordIndex = Random.Next(words.Length);
             var selectedWord = words[randomWordIndex];
             Console.Write(selectedWord + " - ");
-           
+
             foreach (var word in words)
             {
                 if (!CompareWordStartAndEnding(selectedWord, word)) continue;
